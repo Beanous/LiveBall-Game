@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://cjb3fkyil5on4"]
+
+[ext_resource type="Texture2D" uid="uid://bbigkoe4w827f" path="res://bbd.jpg" id="1_0xm2m"]
+[ext_resource type="Script" uid="uid://bn1uxn5h2b18s" path="res://MainMenu.gd" id="1_h2yge"]
+[ext_resource type="Texture2D" uid="uid://ddg2826olovc1" path="res://audio/Based on Akers Games B&W.png" id="3_h2yge"]
+
+[node name="Main" type="Node2D" unique_id=819049525]
+script = ExtResource("1_h2yge")
+
+[node name="Bbd" type="Sprite2D" parent="." unique_id=2066579243]
+position = Vector2(640.5, 360.00003)
+scale = Vector2(0.9976562, 0.9972223)
+texture = ExtResource("1_0xm2m")
+
+[node name="TeamSelection" type="Button" parent="." unique_id=700107728]
+offset_left = 574.0
+offset_top = 420.0
+offset_right = 706.0
+offset_bottom = 471.0
+action_mode = 0
+text = "Team Selection"
+
+[node name="Button" type="Button" parent="TeamSelection" unique_id=1242455947]
+layout_mode = 0
+offset_right = 8.0
+offset_bottom = 8.0
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=208202038]
+volume_db = -6.385
+
+[node name="CreditsButton" type="Button" parent="." unique_id=1285666801]
+offset_left = 759.0
+offset_top = 659.0
+offset_right = 822.0
+offset_bottom = 701.0
+text = "Credits"
+
+[node name="BasedOnAkersGamesB&w" type="Sprite2D" parent="." unique_id=1065435190]
+position = Vector2(913, 625)
+scale = Vector2(0.14583334, 0.1383333)
+texture = ExtResource("3_h2yge")
+
+[connection signal="pressed" from="CreditsButton" to="." method="_on_credits_button_pressed"]

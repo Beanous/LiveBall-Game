@@ -1,0 +1,258 @@
+[gd_scene format=3 uid="uid://ceowv0wh0h6y"]
+
+[ext_resource type="Texture2D" uid="uid://bbigkoe4w827f" path="res://bbd.jpg" id="1_2hfgj"]
+[ext_resource type="Script" uid="uid://t54r83w2a3om" path="res://GameEngine.gd" id="1_mxgrh"]
+[ext_resource type="Texture2D" uid="uid://lxqkhfufkw26" path="res://BaseDiamond.jpg" id="3_rwyep"]
+[ext_resource type="Texture2D" uid="uid://b72d117x23kkr" path="res://Actual White Dot.png" id="3_vcv2r"]
+[ext_resource type="Texture2D" uid="uid://bwfcd2cgw0jyc" path="res://Runner Sprite.png" id="5_ecul5"]
+
+[node name="Node2D" type="Node2D" unique_id=1900582154]
+script = ExtResource("1_mxgrh")
+
+[node name="Bbd" type="Sprite2D" parent="." unique_id=825708348]
+position = Vector2(640, 360.00003)
+scale = Vector2(1, 0.99999994)
+texture = ExtResource("1_2hfgj")
+
+[node name="Scoreboard" type="Control" parent="." unique_id=1050706312]
+top_level = true
+visibility_layer = 513
+z_index = 10
+layout_mode = 3
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = -8.0
+offset_bottom = 624.0
+grow_horizontal = 2
+
+[node name="StadiumLabel" type="Label" parent="Scoreboard" unique_id=321437409]
+layout_mode = 0
+offset_left = 69.99999
+offset_top = 464.0
+offset_right = 262.0
+offset_bottom = 487.0
+horizontal_alignment = 1
+vertical_alignment = 2
+
+[node name="InningLabel" type="Label" parent="Scoreboard" unique_id=2121367934]
+z_index = 2
+layout_mode = 0
+offset_left = 45.999992
+offset_top = 496.0
+offset_right = 134.0
+offset_bottom = 520.0
+horizontal_alignment = 1
+
+[node name="OutsLabel" type="Label" parent="Scoreboard" unique_id=1845995546]
+z_index = 2
+layout_mode = 0
+offset_left = 190.0
+offset_top = 496.0
+offset_right = 246.0
+offset_bottom = 520.0
+horizontal_alignment = 2
+
+[node name="AwayTeamLabel" type="Label" parent="Scoreboard" unique_id=237708303]
+z_index = 2
+layout_mode = 0
+offset_left = 40.0
+offset_top = 528.0
+offset_right = 136.0
+offset_bottom = 552.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HomeTeamLabel" type="Label" parent="Scoreboard" unique_id=1578130039]
+z_index = 2
+layout_mode = 0
+offset_left = 168.0
+offset_top = 528.0
+offset_right = 264.0
+offset_bottom = 552.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AwayScoreLabel" type="Label" parent="Scoreboard" unique_id=249249435]
+z_index = 2
+layout_mode = 0
+offset_left = 64.0
+offset_top = 560.0
+offset_right = 112.0
+offset_bottom = 584.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="HomeScoreLabel" type="Label" parent="Scoreboard" unique_id=1477011058]
+z_index = 2
+layout_mode = 0
+offset_left = 200.0
+offset_top = 560.0
+offset_right = 248.0
+offset_bottom = 584.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PitcherLabel" type="Label" parent="Scoreboard" unique_id=1726449876]
+z_index = 2
+layout_mode = 0
+offset_left = 32.0
+offset_top = 600.0
+offset_right = 304.0
+offset_bottom = 624.0
+vertical_alignment = 1
+
+[node name="BatterLabel" type="Label" parent="Scoreboard" unique_id=2071823050]
+z_index = 2
+layout_mode = 0
+offset_left = 32.0
+offset_top = 680.0
+offset_right = 304.0
+offset_bottom = 704.0
+vertical_alignment = 1
+
+[node name="PlayResultLabel" type="Label" parent="Scoreboard" unique_id=1485310549]
+layout_mode = 0
+offset_left = 39.999996
+offset_top = 400.0
+offset_right = 144.0
+offset_bottom = 439.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="PitchDieLabel" type="Label" parent="Scoreboard" unique_id=542335931]
+visible = false
+z_index = 20
+layout_mode = 0
+offset_left = 768.0
+offset_top = 520.0
+offset_right = 832.0
+offset_bottom = 584.0
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BaseDiamond" type="Sprite2D" parent="." unique_id=878297488]
+position = Vector2(86, 408.00003)
+scale = Vector2(0.084374994, 0.116666675)
+texture = ExtResource("3_rwyep")
+
+[node name="FirstBase" type="Sprite2D" parent="BaseDiamond" unique_id=548720513]
+position = Vector2(379.25928, 68.57153)
+scale = Vector2(0.57407415, 0.5)
+texture = ExtResource("3_vcv2r")
+
+[node name="SecondBase" type="Sprite2D" parent="BaseDiamond" unique_id=602760007]
+position = Vector2(0, -205.71411)
+scale = Vector2(0.5740742, 0.5)
+texture = ExtResource("3_vcv2r")
+
+[node name="ThirdBase" type="Sprite2D" parent="BaseDiamond" unique_id=1508162955]
+position = Vector2(-379.25928, 68.57153)
+scale = Vector2(0.5740742, 0.5)
+texture = ExtResource("3_vcv2r")
+
+[node name="Panel" type="Panel" parent="." unique_id=168398980]
+offset_left = 8.0
+offset_top = 480.0
+offset_right = 360.0
+offset_bottom = 704.0
+
+[node name="PitchButton" type="Button" parent="." unique_id=512249401]
+offset_left = 608.0
+offset_top = 416.0
+offset_right = 672.0
+offset_bottom = 480.0
+text = "Pitch"
+
+[node name="first_base_runner_sprite" type="Sprite2D" parent="." unique_id=1113466526]
+visible = false
+position = Vector2(688, 384)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_ecul5")
+
+[node name="second_base_runner_sprite" type="Sprite2D" parent="." unique_id=1101525575]
+visible = false
+position = Vector2(576, 280)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_ecul5")
+
+[node name="third_base_runner_sprite" type="Sprite2D" parent="." unique_id=89428881]
+visible = false
+position = Vector2(464.00003, 384)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("5_ecul5")
+
+[node name="first_base_runner_label" type="Label" parent="." unique_id=797526541]
+visible = false
+offset_left = 656.0
+offset_top = 344.0
+offset_right = 720.0
+offset_bottom = 367.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="second_base_runner_label" type="Label" parent="." unique_id=167781436]
+visible = false
+offset_left = 552.0
+offset_top = 240.0
+offset_right = 600.0
+offset_bottom = 263.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="third_base_runner_label" type="Label" parent="." unique_id=207201676]
+visible = false
+offset_left = 440.0
+offset_top = 344.0
+offset_right = 488.0
+offset_bottom = 367.0
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="BullpenButton" type="Button" parent="." unique_id=970447026]
+offset_left = 768.0
+offset_top = 656.0
+offset_right = 848.0
+offset_bottom = 704.0
+text = "Bullpen"
+
+[node name="BullpenMenu" type="PopupMenu" parent="." unique_id=1692110995]
+oversampling_override = 1.0
+position = Vector2i(529, 112)
+
+[node name="ScrollContainer" type="ScrollContainer" parent="." unique_id=1613422126]
+offset_left = 24.0
+offset_top = 16.0
+offset_right = 512.0
+offset_bottom = 168.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="play_log" type="VBoxContainer" parent="ScrollContainer" unique_id=1023287183]
+z_index = 10
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="WeatherIcon" type="TextureRect" parent="." unique_id=1929802669]
+offset_left = 150.0
+offset_top = 352.0
+offset_right = 230.0
+offset_bottom = 432.0
+expand_mode = 1
+
+[node name="SFXPlayer" type="AudioStreamPlayer" parent="." unique_id=2015507209]
+bus = &"SFX"
+
+[node name="ReactionPlayer" type="AudioStreamPlayer" parent="." unique_id=957227543]
+volume_db = -6.386
+bus = &"Reaction"
+
+[node name="AmbiencePlayer" type="AudioStreamPlayer" parent="." unique_id=1294914329]
+volume_db = -10.035
+bus = &"Ambience"
+
+[connection signal="pressed" from="PitchButton" to="." method="_on_pitch_button_pressed"]
+[connection signal="pressed" from="BullpenButton" to="." method="_on_bullpen_button_pressed"]
+[connection signal="id_pressed" from="BullpenMenu" to="." method="_on_bullpen_menu_id_pressed"]

@@ -1,0 +1,19 @@
+Team,Ballpark Name,Quirk,Variation,,,,,,,,,,,,GODOT,Deadball
+Badgers,Fintello Field,Hit Table +1,75,,,,,,,,,,,,Hit Table +1,Hit Table +1
+Bulldogs,AlPaw Arena,Hit Table -1,60,,,,,,,,,,,,Hit Table -1,Hit Table +1
+Bullets,Prudence Park,SB+1/IDEF-1,50,,,,,,,,,,,,HT18T,18 = Triple
+Cannons,The Armory,HT18T,70,,,,,,,,,,,,HT1820HR,18-20 = Homerun
+Claws,Silver Stadium,OFDEF+1,20,,,,,,,,,,,,HT20HR,Only 20 = Homerun 
+Crocs,Vadun Venue,LFDEF-1,80,,,,,,,,,,,,4757HR,47/57 = Homerun
+Infernos,Firewall Field,MSS-,60,,,,,,,,,,,,4959HR,49/59 = Homerun
+Knights,Camelot Court,4959HR,45,,,,,,,,,,,,LFDEF-1,LF DEF -1
+Marshals,Prosure Downs,CFDEF-1,10,,,,,,,,,,,,CFDEF-1,CF DEF -1
+Novas,Starlight Stadium,MSS+,80,,,,,,,,,,,,RFDEF-1,RF DEF -1
+Runners,Yumco Yards,Hit Table +1,35,,,,,,,,,,,,OFDEF+1,OF DEF Rolls +1
+Sabertooths,Suppli Center,RFDEF-1,65,,,,,,,,,,,,OFDEF-1,OF DEF Rolls -1
+Spartans,Ironclad Arena,4757HR,30,,,,,,,,,,,,SB+1IDEF-1,SB +1/INF DEF -1
+Spikes,The Fish Bowl,SB-1IDEF+1,65,,,,,,,,,,,,SB-1IDEF+1,SB -1/INF DEF +1
+Trolls,Nommi Field,OFDEF+1,70,,,,,,,,,,,,MSS+,MSS +1
+War Hogs,Stratos Stadium,HT20HR,70,,,,,,,,,,,,MSS-,MSS -1
+,,,,,,,,,,,,,,,BTOBT+,OBT/BT +5
+,,,,,,,,,,,,,,,BTOBT-,OBT/BT -5

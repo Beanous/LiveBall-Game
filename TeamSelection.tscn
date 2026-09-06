@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cux371cywiuch"]
+
+[ext_resource type="Script" uid="uid://d1e8sydqycvq4" path="res://TeamSelection.gd" id="1_7hvtm"]
+
+[node name="Control" type="Control" unique_id=171461324]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -3.0
+offset_top = 3.0
+offset_right = -3.0
+offset_bottom = 3.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_7hvtm")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2028561938]
+layout_mode = 0
+offset_top = -3.0
+offset_right = 1283.0
+offset_bottom = 717.0
+color = Color(0.07058824, 0.20392157, 0.3372549, 1)
+
+[node name="AwayTeamSelect" type="OptionButton" parent="." unique_id=1082497876]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 61.0
+offset_right = 259.0
+offset_bottom = 127.0
+
+[node name="HomeTeamSelect" type="OptionButton" parent="." unique_id=2071030645]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 61.0
+offset_right = 515.0
+offset_bottom = 125.0
+
+[node name="PlayBall" type="Button" parent="." unique_id=1086264843]
+layout_mode = 0
+offset_left = 818.0
+offset_top = 532.0
+offset_right = 1119.0
+offset_bottom = 619.0
+text = "Play Ball!
+"
+
+[node name="AwayPitcherSelect" type="OptionButton" parent="." unique_id=1375539172]
+layout_mode = 0
+offset_left = 67.0
+offset_top = 189.0
+offset_right = 259.0
+offset_bottom = 253.0
+
+[node name="HomePitcherSelect" type="OptionButton" parent="." unique_id=372281975]
+layout_mode = 0
+offset_left = 323.0
+offset_top = 189.0
+offset_right = 515.0
+offset_bottom = 253.0
+
+[node name="AwayLineup" type="VBoxContainer" parent="." unique_id=1821633932]
+layout_mode = 0
+offset_left = 643.0
+offset_top = 61.0
+offset_right = 835.0
+offset_bottom = 317.0
+
+[node name="HomeLineup" type="VBoxContainer" parent="." unique_id=530495121]
+layout_mode = 0
+offset_left = 963.0
+offset_top = 61.0
+offset_right = 1155.0
+offset_bottom = 317.0
+
+[node name="SFXPlayer" type="AudioStreamPlayer2D" parent="." unique_id=160612382]
+
+[connection signal="pressed" from="PlayBall" to="." method="_on_play_ball_pressed"]

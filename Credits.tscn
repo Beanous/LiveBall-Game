@@ -1,0 +1,70 @@
+[gd_scene format=3 uid="uid://ueo3jq3t32vm"]
+
+[ext_resource type="Script" uid="uid://sanfmm82tvt7" path="res://credits.gd" id="1_4qwwl"]
+[ext_resource type="Texture2D" uid="uid://lxqkhfufkw26" path="res://BaseDiamond.jpg" id="1_ynf4x"]
+
+[node name="Control" type="Control" unique_id=395124736]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_4qwwl")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=1614687863]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="BaseDiamond" type="Sprite2D" parent="." unique_id=1334244986]
+position = Vector2(639, 358.5)
+scale = Vector2(1.003125, 1.0013888)
+texture = ExtResource("1_ynf4x")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=1408012346]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 34.0
+offset_right = 1137.0
+offset_bottom = 637.0
+bbcode_enabled = true
+text = "[b]Ruleset from [/b] 
+Deadball: Baseball with Dice by W.M. Akers
+Deadball Year II by W.M. Akers
+Deadball: Masters of the Game by W.M. Akers
+
+[b] Additional Traits provided by[/b]
+Dr. J's Alphabet of Traits by JLeeBly
+
+[b]Additional Quirks provided by[/b]
+Diamonds are Forever: A \"Deadball: Baseball with Dice\" Supplement by JLeeBly
+
+[b]Opening Theme[/b]
+Welcome to Arena (Sport Hip Hop) by Artlssizm
+pixabay.com/music
+
+[b]End Game Theme[/b]
+Take the Ball and Run (Medium) by AlexGuz
+pixabay.com/music
+
+[b]SFX[/b]
+Baseball Sound Effects by Gravity Sound. Available on itch.io
+Baseball Announcer Super Voice Pack by B. Patrick. Available on itch.io
+
+[b]Coding and Development[/b]
+PB Productions
+"
+
+[node name="BackButton" type="Button" parent="." unique_id=1203405211]
+layout_mode = 1
+anchors_preset = -1
+anchor_right = 1.125
+anchor_bottom = 1.0
+offset_left = 1204.0
+offset_top = 661.0
+offset_right = 1204.0
+offset_bottom = 652.0
+text = "Back"
+
+[node name="MusicPlayer" type="AudioStreamPlayer" parent="." unique_id=691134153]
+
+[connection signal="pressed" from="BackButton" to="." method="_on_back_button_pressed"]
